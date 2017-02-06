@@ -1,0 +1,16 @@
+.head {
+    width: 100%;
+    /*position: fixed;*/
+    top: 0;
+}
+
+.bottom {
+    color: #FFFFFF;
+    width: 100%;
+    height: 55px;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+    background: #333333;
+    position: fixed;
+    bottom: 0;
+}

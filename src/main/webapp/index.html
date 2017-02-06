@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script data-main="static/main" src="/nm/static/lib/require.js"></script>
+    <style type="text/css">
+        #scrolltop {
+            visibility: hidden;
+            position: fixed;
+            bottom: 105px;
+            display: block;
+            margin: -30px 0 0 10px;
+            width: 47px;
+            border: 0px #cdcdcd solid;
+            border-radius: 3px;
+            border-top: 0;
+            cursor: pointer;
+        }
+
+        #scrolltop a {
+            display: block;
+            width: 37px;
+            height: 40px;
+            line-height: 12px;
+            text-align: center;
+            color: #787878;
+            text-decoration: none;
+            background: url(static/images/scrolltop.png) no-repeat 0 0;
+            border-top: 0px #cdcdcd solid;
+        }
+        #topnav {
+            width: 100%;
+            background: #31A9B3;
+            height: 50px;
+            line-height: 46px;
+        }
+        #topnav a {
+            color: #FFF;
+        }
+        #topnav a {
+            display: inline-block;
+            font-size: 18px;
+            font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+            padding: 0 20px;
+        }
+        a:link, a:visited {
+            text-decoration: none;
+            color: #666;
+        }
+        a {
+            outline: none;
+        }
+        #topnav_current {
+            background: #fff;
+            border-top: 4px solid #f77825;
+            color: #000;
+        }
+        a#topnav_current {
+            color: #000;
+        }
+        #topnav ul {
+            width: 1000px;
+            margin: auto;
+        }
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<!--  --------------------------------- 头部 ------------------------------------------- -->
+<!--<div class="head">-->
+    <!--<nav class="top-bar" data-topbar role="navigation">-->
+        <!--<ul class="title-area">-->
+            <!--<li class="name">-->
+                <!--<h1><a href="#">预留</a></h1>-->
+            <!--</li>-->
+            <!--<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>-->
+        <!--</ul>-->
+
+        <!--<section class="top-bar-section">-->
+            <!--&lt;!&ndash; Right Nav Section &ndash;&gt;-->
+            <!--<ul class="right">-->
+                <!--<li class="has-form">-->
+                    <!--<div class="row collapse">-->
+                        <!--<div class="large-8 small-9 columns">-->
+                            <!--<input type="text" placeholder="Find Stuff">-->
+                        <!--</div>-->
+                        <!--<div class="large-4 small-3 columns">-->
+                            <!--<a href="#" class="alert button expand">Search</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</li>-->
+
+                <!--<li class="active"><a href="#">登录</a></li>-->
+                <!--<li class="has-dropdown">-->
+                    <!--<a href="#">我的账户</a>-->
+                    <!--<ul class="dropdown">-->
+                        <!--<li><a href="#">头像管理</a></li>-->
+                        <!--<li class="active"><a href="#">账户信息</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+
+            <!--&lt;!&ndash; Left Nav Section &ndash;&gt;-->
+            <!--<ul class="left">-->
+                <!--<li><a href="#">预留</a></li>-->
+            <!--</ul>-->
+        <!--</section>-->
+    <!--</nav>-->
+<!--</div>-->
+
+<nav id="topnav">
+    <ul>
+        <a href="http://localhost:8080/nm/" id="topnav_current">首页</a>
+        <a href="http://localhost:8080/nm/">内幕资讯</a>
+        <a href="http://localhost:8080/nm/">内幕资讯</a>
+        <a href="http://localhost:8080/nm/">内幕资讯</a>
+        <a href="http://localhost:8080/nm/">财经内幕</a>
+        <a href="http://localhost:8080/nm/">最新资讯</a>
+        <a href="http://localhost:8080/nm/">智能手机</a>
+        <a href="http://localhost:8080/nm/">手机常识</a>
+        <a href="http://localhost:8080/nm/">周边配件</a>
+        <a href="http://localhost:8080/nm/">手机生活</a>
+        <a href="http://localhost:8080/nm/">关于我们</a>
+
+    </ul>
+</nav>
+<!--  --------------------------------- body内容 ------------------------------------------- -->
+<hr/>
+<!--广告轮播-->
+<!--<div style="height:100px;width: 40%;margin:55px auto 10px auto;text-align: center">-->
+    <!--<div class="slider fade autoplay">-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<div class="image"><img data-lazy="static/images/xiaomi.png"/></div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div style="clear:both ;"></div>
+<!-- 中部内容 -->
+
+<!-- 中部-->
+<div style="width: 60%;clear: both;margin: 0 auto;">
+    <!-- 中部左边帖子整体-->
+    <div style="width: 900px;zoom: 1;min-height: 300px;overflow: hidden;float: left;border-radius: 10px;">
+        <div class="blogs">
+            <figure><img src="static/images/01.jpg"></figure>
+            <ul>
+                <h3><a href="/">住在手机里的朋友</a></h3>
+                <p>
+                    通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊
+                    ...</p>
+                <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span
+                        class="dtime f_l">2014-02-19</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span
+                        class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+            </ul>
+        </div>
+        <div class="blogs">
+            <figure><img src="static/images/01.jpg"></figure>
+            <ul>
+                <h3><a href="/">住在手机里的朋友</a></h3>
+                <p>
+                    通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊
+                    ...</p>
+                <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span
+                        class="dtime f_l">2014-02-19</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span
+                        class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+            </ul>
+        </div>
+        <div class="blogs">
+            <figure><img src="static/images/01.jpg"></figure>
+            <ul>
+                <h3><a href="/">住在手机里的朋友</a></h3>
+                <p>
+                    通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊
+                    ...</p>
+                <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span
+                        class="dtime f_l">2014-02-19</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span
+                        class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+            </ul>
+        </div>
+        <div class="blogs">
+            <figure><img src="static/images/01.jpg"></figure>
+            <ul>
+                <h3><a href="/">住在手机里的朋友</a></h3>
+                <p>
+                    通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊
+                    ...</p>
+                <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span
+                        class="dtime f_l">2014-02-19</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span
+                        class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+            </ul>
+        </div>
+        <div class="blogs">
+            <figure><img src="static/images/01.jpg"></figure>
+            <ul>
+                <h3><a href="/">住在手机里的朋友</a></h3>
+                <p>
+                    通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊
+                    ...</p>
+                <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span
+                        class="dtime f_l">2014-02-19</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span
+                        class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+            </ul>
+        </div>
+        <div class="blogs">
+            <figure><img src="static/images/01.jpg"></figure>
+            <ul>
+                <h3><a href="/">住在手机里的朋友</a></h3>
+                <p>
+                    通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊
+                    ...</p>
+                <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span
+                        class="dtime f_l">2014-02-19</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span
+                        class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+            </ul>
+        </div>
+        <div class="blogs">
+            <figure><img src="static/images/01.jpg"></figure>
+            <ul>
+                <h3><a href="/">住在手机里的朋友</a></h3>
+                <p>
+                    通信时代，无论是初次相见还是老友重逢，交换联系方式，常常是彼此交换名片，然后郑重或是出于礼貌用手机记下对方的电话号码。在快节奏的生活里，我们不知不觉中就成为住在别人手机里的朋友。又因某些意外，变成了别人手机里匆忙的过客，这种快餐式的友谊
+                    ...</p>
+                <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span
+                        class="dtime f_l">2014-02-19</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span
+                        class="pingl f_r">评论（<a href="/">30</a>）</span></p>
+            </ul>
+        </div>
+
+
+    </div>
+    <!-- 中部右边帖子整体-->
+    <div style="float: right">
+        <div class="miui_bm b_rad b_line b_pad b_bw">
+            <div>
+                <h2 class="rt_h2">热帖排行</h2>
+            </div>
+            <ul class="u_article" style="margin: 0;padding: 0;">
+                <li><a href="thread-3415047-1-1.html" title="近期“回复可见”的灌水处理公告" target="_blank">近期“回复可见”的灌水处理公告</a></li>
+                <li><a href="thread-4413551-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a>
+                </li>
+                <li><a href="thread-4417024-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+            </ul>
+        </div>
+        <div class="miui_bm b_rad b_line b_pad b_bw">
+            <div>
+                <h2 class="rt_h2">热帖排行</h2>
+            </div>
+            <ul class="u_article" style="margin: 0;padding: 0;">
+                <li><a href="thread-3415047-1-1.html" title="近期“回复可见”的灌水处理公告" target="_blank">近期“回复可见”的灌水处理公告</a></li>
+                <li><a href="thread-4413551-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a>
+                </li>
+                <li><a href="thread-4417024-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+            </ul>
+        </div>
+        <div class="miui_bm b_rad b_line b_pad b_bw">
+            <div>
+                <h2 class="rt_h2">赞助</h2>
+            </div>
+            <ul class="u_article" style="margin: 0;padding: 0;">
+                <li><a href="thread-3415047-1-1.html" title="近期“回复可见”的灌水处理公告" target="_blank">支付宝扫一扫</a></li>
+                <li><a href="thread-4413551-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a>
+                </li>
+                <li><a href="thread-4417024-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+                <li><a href="thread-4417680-1-1.html" title="京东爆京东金融数据造假，官方回应" target="_blank">京东爆京东金融数据造假，官方回应</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="scrolltop" style="left: 1520px; visibility: visible;">
+    <span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa"><b></b></a></span>
+</div>
+
+
+<!--  --------------------------------- 尾部 ------------------------------------------- -->
+<div class="bottom">
+    <div style="float: left;width: 50%;text-align: right;">Copyright &copy; 2016-<em id="nowyear">2016</em> 爆料天地</div>
+    <div style="float: right;width: 50%;text-align: left">&nbsp;&nbsp;&nbsp;备案号</div>
+    <div class="clear"></div>
+</div>
+</body>
+</html>
